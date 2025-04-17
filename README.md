@@ -1,45 +1,38 @@
-# vue-test-task
+Тестовое задание
 
-This template should help get you started developing with Vue 3 in Vite.
+Для моковых даннх можно использовать сайт https://mockapi.io/projects
 
-## Recommended IDE Setup
+Референсы по дизайну https://www.figma.com/design/AR5J7i73Io4pi4NKXrqZPY/UI-test-task?node-id=0-1&p=f&t=EvAnnRn0jpdZIvmO-0
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Реализовать весь функционал необходимо без использования js и css библиотек
+Стили и размеры должны соотвествовать макету
 
-## Type Support for `.vue` Imports in TS
+ОСНОВНОЕ:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Необходимо реализовать адаптивную страницу
+2. Адаптив для экранов 1440px, 1024px, 768px, 360px
+3. Блоки на странице
+- Блок с товарами в сетке. Максимум товаров на странице 20
+  - 1440px - 4 столбца
+  - 1024px - 3 столбца
+  - 768px - 2 - столбца
+  - 360px - 1 столбец
 
-## Customize configuration
+  Переключение товаров происходит с помощью пагинации (вид пагинации на свой вкус).
+4. По клику на иконку избранного происходит добавление товара в избранное и иконка меняется на активную
+5. По клику на кнопку "Заказать" открывается модальное окно
+6. В модальном окне появляется форма с 3мя полями:
+  - Полное имя
+  - E-mail
+  - Телефон
+7. Отправку формы заменяем на вывод объекта с итоговыми данными в консоль
+8. После отправки формы появляется второй попап "Заказ оформлен"
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Особенности работы попапа:
+- Должен иметь настройку "наличие крестика"
+- title является обязательным и находится всегда в зафиксированном месте
 
-## Project Setup
+ДОПОЛНИТЕЛЬНО:
 
-```sh
-npm install
-```
+Реализовать второй блок со слайдером под блоком из пукнат 3
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
